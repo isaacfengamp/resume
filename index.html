@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Isaac Ampaire - IT Officer, Microsoft Dynamics 365 Consultant, Instructor, and AI Enthusiast based in Kampala, Uganda">
+  <meta name="keywords" content="Isaac Ampaire, IT, Microsoft Dynamics 365, Consultant, Instructor, AI">
+  <meta name="author" content="Isaac Ampaire">
+  <title>Isaac Ampaire | Portfolio</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#795548', 
+            secondary: '#87CEEB', 
+            dark: {
+              primary: '#5D4037',
+              secondary: '#5DADE2',
+              background: '#121212',
+              surface: '#1E1E1E',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  
+  
+</head>
+
+<body class="bg-gray-50 text-gray-800 custom-scrollbar dark:bg-dark-background dark:text-gray-100">
+  <!-- Header/Navigation -->
+  <header class="fixed top-0 left-0 right-0 bg-white dark:bg-dark-surface shadow-md z-50">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#home" class="text-xl font-bold text-primary dark:text-secondary flex items-center space-x-2">
+        <span>Isaac Ampaire</span>
+      </a>
+      
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button id="theme-toggle" class="focus:outline-none" aria-label="Toggle Dark Mode">
+          <i class="fas fa-moon dark:hidden"></i>
+          <i class="fas fa-sun hidden dark:block"></i>
+        </button>
+      </div>
+      
+      <div class="md:hidden flex items-center space-x-4">
+        <button id="theme-toggle-mobile" class="focus:outline-none" aria-label="Toggle Dark Mode">
+          <i class="fas fa-moon dark:hidden"></i>
+          <i class="fas fa-sun hidden dark:block"></i>
+        </button>
+        <button id="mobile-menu-button" class="focus:outline-none" aria-label="Open Menu">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-[72px] left-0 bottom-0 w-full sm:w-64 bg-white dark:bg-dark-surface shadow-lg z-40 md:hidden">
+      <div class="flex flex-col py-4">
+        <a href="#home" class="mobile-nav-link px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+        <a href="#about" class="mobile-nav-link px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">About</a>
+        <a href="#projects" class="mobile-nav-link px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
+        <a href="#skills" class="mobile-nav-link px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">Skills</a>
+        <a href="#gallery" class="mobile-nav-link px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">Gallery</a>
+        <a href="#contact" class="mobile-nav-link px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">Contact</a>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden md:hidden"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen hero-gradient flex items-center pt-24 pb-16">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col-reverse lg:flex-row items-center">
+        <div class="lg:w-1/2 mt-8 lg:mt-0" data-aos="fade-right">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary dark:text-secondary mb-4">
+            Isaac Ampaire
+          </h1>
+          <h2 class="text-xl md:text-2xl font-semibold mb-6 text-gray-700 dark:text-gray-300">
+            IT Officer | Microsoft Dynamics 365 Consultant | Instructor | AI Enthusiast
+          </h2>
+          
+          <div class="flex items-center mb-5 text-gray-600 dark:text-gray-400">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>Kampala, Uganda</span>
+          </div>
+          
+          <div class="flex flex-wrap gap-4 mb-8">
+            <a href="mailto:Isaac.ampaire@outlook.com" class="flex items-center bg-white dark:bg-dark-surface rounded-full px-4 py-2 shadow-md hover:shadow-lg transition duration-300">
+              <i class="fas fa-envelope text-primary dark:text-secondary mr-2"></i>
+              <span>Isaac.ampaire@outlook.com</span>
+            </a>
+            <a href="tel:+256775767776" class="flex items-center bg-white dark:bg-dark-surface rounded-full px-4 py-2 shadow-md hover:shadow-lg transition duration-300">
+              <i class="fas fa-phone text-primary dark:text-secondary mr-2"></i>
+              <span>+256 (0) 775 767776</span>
+            </a>
+            <a href="https://www.linkedin.com/in/isaac-ampaire-081183283/" class="flex items-center bg-white dark:bg-dark-surface rounded-full px-4 py-2 shadow-md hover:shadow-lg transition duration-300">
+              <i class="fab fa-linkedin text-primary dark:text-secondary mr-2"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+          
+          <p class="text-lg text-gray-700 dark:text-gray-300 italic border-l-4 border-secondary dark:border-dark-secondary pl-4 mb-8">
+            "I help organizations solve real-world challenges through technology — from reliable IT support to business process automation using Microsoft Dynamics 365 and beyond."
+          </p>
+          
+          <div class="flex space-x-4">
+            <a href="#projects" class="bg-primary hover:bg-opacity-90 text-white px-6 py-3 rounded-md shadow-md transition duration-300">
+              View My Projects
+            </a>
+            <a href="#contact" class="border-2 border-primary dark:border-secondary text-primary dark:text-secondary hover:bg-primary hover:bg-opacity-10 px-6 py-3 rounded-md shadow-md transition duration-300">
+              Contact Me
+            </a>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/2 flex justify-center" data-aos="fade-left">
+          <div class="relative w-64 h-64 md:w-80 md:h-80">
+            <div class="absolute inset-0 rounded-full bg-secondary dark:bg-dark-secondary bg-opacity-20 dark:bg-opacity-20"></div>
+            <img 
+              src="./images/isaac.jpg" 
+              alt="Isaac Ampaire" 
+              class="rounded-full w-full h-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white dark:bg-dark-surface">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold section-heading mb-12" data-aos="fade-right">About Me</h2>
+      
+      <div class="flex flex-col lg:flex-row gap-12">
+        <div class="lg:w-2/3" data-aos="fade-up">
+          <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">
+            I'm a passionate Information Technology professional with a Bachelor's degree in Information Technology and Computing from Kyambogo University (Second-Class Upper, CGPA: 4.32). I am also a Microsoft Certified: Dynamics 365 Business Central Developer Associate and Functional Consultant.
+          </p>
+          <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">
+            With experience at organizations like Aga Khan University and Adroit Solutions, I have built skills in infrastructure management, systems support, and business process automation. I enjoy teaching others and continuously exploring the potential of AI in education and operations.
+          </p>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Work Experience</h3>
+          
+          <div class="space-y-8">
+            <!-- Experience Card 1 -->
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-md" data-aos="fade-up">
+              <div class="flex justify-between items-start flex-wrap gap-2 mb-4">
+                <div>
+                  <h4 class="font-bold text-lg text-primary dark:text-secondary">IT Officer</h4>
+                  <h5 class="font-medium">Aga Khan University</h5>
+                </div>
+                <span class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm px-3 py-1 rounded-full">
+                  2025 - Present
+                </span>
+              </div>
+              <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+                <li>Managed campus-wide IT infrastructure ensuring 99% uptime for critical systems</li>
+                <li>Conducted IT induction training for 200+ new students</li>
+                <li>Implemented new backup and disaster recovery protocols</li>
+                <li>Provided technical support to staff and students, resolving 30+ weekly support requests</li>
+              </ul>
+            </div>
+            
+            <!-- Experience Card 2 -->
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-md" data-aos="fade-up" data-aos-delay="100">
+              <div class="flex justify-between items-start flex-wrap gap-2 mb-4">
+                <div>
+                  <h4 class="font-bold text-lg text-primary dark:text-secondary">Dynamics 365 Consultant</h4>
+                  <h5 class="font-medium">Adroit Solutions</h5>
+                </div>
+                <span class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm px-3 py-1 rounded-full">
+                  2024 - 2025
+                </span>
+              </div>
+              <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+                <li>Customized Dynamics 365 modules for 5+ clients in finance and distribution sectors</li>
+                <li>Delivered hands-on training workshops for client teams of 15+ users</li>
+                <li>Developed custom reports and dashboards reducing manual reporting time by 50%</li>
+                <li>Collaborated with business stakeholders to identify and implement process improvements</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/3" data-aos="fade-left">
+          <div class="sticky top-24">
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-md mb-8">
+              <h3 class="text-xl font-semibold mb-4 flex items-center">
+                <i class="fas fa-user-graduate text-primary dark:text-secondary mr-2"></i>
+                Education
+              </h3>
+              <div class="mb-4">
+                <h4 class="font-bold">Bachelor's in Information Technology and Computing</h4>
+                <p class="text-gray-700 dark:text-gray-300">Kyambogo University</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Second-Class Upper, CGPA: 4.32</p>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-md">
+              <h3 class="text-xl font-semibold mb-4 flex items-center">
+                <i class="fas fa-certificate text-primary dark:text-secondary mr-2"></i>
+                Key Certifications
+              </h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                  <div>
+                    <p class="font-medium">Microsoft Certified: Dynamics 365 Business Central Developer Associate</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                  <div>
+                    <p class="font-medium">Microsoft Certified: Dynamics 365 Functional Consultant Associate</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-100 dark:bg-dark-background">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold section-heading mb-12" data-aos="fade-right">Projects</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="project-card bg-white dark:bg-dark-surface rounded-lg shadow-md overflow-hidden" data-aos="fade-up">
+          <div class="h-56 overflow-hidden">
+            <img 
+              src="./images/bs.png" 
+              alt="Dynamics 365 Customization" 
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-primary dark:text-secondary">Dynamics 365 Customization for SME Client</h3>
+            <div class="mb-4">
+              <span class="text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded mr-2">Consultant & Developer</span>
+              <span class="text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Dynamics 365 BC, AL Language</span>
+            </div>
+            <h4 class="font-semibold text-gray-700 dark:text-gray-300 mb-2">Highlights:</h4>
+            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mb-4">
+              <li>Customized modules to support local finance workflows</li>
+              <li>Delivered hands-on training to 15+ users</li>
+              <li>Reduced manual reporting time by 50%</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card bg-white dark:bg-dark-surface rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-56 overflow-hidden">
+            <img 
+              src="https://cdn.pixabay.com/photo/2020/05/18/16/17/social-media-5187243_960_720.png" 
+              alt="IT Infrastructure Setup" 
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-primary dark:text-secondary">IT Infrastructure Setup – Aga Khan University Uganda</h3>
+            <div class="mb-4">
+              <span class="text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">IT Officer</span>
+            </div>
+            <h4 class="font-semibold text-gray-700 dark:text-gray-300 mb-2">Highlights:</h4>
+            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mb-4">
+              <li>Maintained uptime across student/staff systems</li>
+              <li>Implemented better backup and failover strategies</li>
+              <li>Conducted IT induction for 200+ new students</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card bg-white dark:bg-dark-surface rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-56 overflow-hidden">
+            <img 
+              src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_960_720.png" 
+              alt="Student Results System" 
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-primary dark:text-secondary">Student Results System Prototype</h3>
+            <div class="mb-4">
+              <span class="text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded mr-2">University Final Project</span>
+              <span class="text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">PHP-Laravel, MySQL, Bootstrap</span>
+            </div>
+            <h4 class="font-semibold text-gray-700 dark:text-gray-300 mb-2">Highlights:</h4>
+            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mb-4">
+              <li>Automated results upload and transcript generation</li>
+              <li>Scored "A" in final year project</li>
+              <li>Prototype reviewed by department</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills & Certifications Section -->
+  <section id="skills" class="py-20 bg-white dark:bg-dark-surface">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold section-heading mb-12" data-aos="fade-right">Skills & Certifications</h2>
+      
+      <div class="flex flex-col lg:flex-row gap-12">
+        <div class="lg:w-1/2" data-aos="fade-up">
+          <h3 class="text-2xl font-semibold mb-6 text-primary dark:text-secondary">Professional Skills</h3>
+          
+          <div class="flex flex-wrap gap-3 mb-8">
+            <span class="skill-tag bg-primary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">Microsoft Dynamics 365 Business Central</span>
+            <span class="skill-tag bg-primary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">IT Support</span>
+            <span class="skill-tag bg-primary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">Infrastructure Management</span>
+            <span class="skill-tag bg-primary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">Technical Writing</span>
+            <span class="skill-tag bg-primary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">Documentation</span>
+            <span class="skill-tag bg-primary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">AI Tools</span>
+            <span class="skill-tag bg-primary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">Training Delivery</span>
+            <span class="skill-tag bg-primary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">Communication</span>
+          </div>
+          
+          <h3 class="text-2xl font-semibold mb-6 text-primary dark:text-secondary">Technical Skills</h3>
+          
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-tag bg-secondary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">HTML/CSS</span>
+            <span class="skill-tag bg-secondary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">SQL</span>
+            <span class="skill-tag bg-secondary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">AL Language</span>
+            <span class="skill-tag bg-secondary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">Microsoft 365</span>
+            <span class="skill-tag bg-secondary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">Windows Server</span>
+            <span class="skill-tag bg-secondary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-secondary px-4 py-2 rounded-full">Network Administration</span>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/2 mt-8 lg:mt-0" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-6 text-primary dark:text-secondary">Certifications</h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg shadow-md">
+              <div class="flex items-center mb-3">
+                <i class="fab fa-microsoft text-2xl text-primary dark:text-secondary mr-3"></i>
+                <h4 class="font-semibold">Dynamics 365 Business Central Developer Associate</h4>
+              </div>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Microsoft Certified</p>
+            </div>
+            
+            <div class="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg shadow-md">
+              <div class="flex items-center mb-3">
+                <i class="fab fa-microsoft text-2xl text-primary dark:text-secondary mr-3"></i>
+                <h4 class="font-semibold">Dynamics 365 Functional Consultant Associate</h4>
+              </div>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Microsoft Certified</p>
+            </div>
+          </div>
+          
+          <h3 class="text-2xl font-semibold my-6 text-primary dark:text-secondary">Courses Completed</h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+              <div>
+                <h4 class="font-semibold">Intro to Data Science – UICT</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Coursera</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+              <div>
+                <h4 class="font-semibold">Power Platform Fundamentals</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Microsoft Learn</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+              <div>
+                <h4 class="font-semibold">Database Systems and SQL</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">SoloLearn</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+              <div>
+                <h4 class="font-semibold">Introduction to Cloud Computing</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">IBM SkillsBuild</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Instructor Section -->
+      <div class="mt-16 border-t border-gray-200 dark:border-gray-700 pt-12" data-aos="fade-up">
+        <h3 class="text-2xl font-semibold mb-6 text-primary dark:text-secondary">Instructor Work & Talks</h3>
+        
+        <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">
+          I am also an instructor with a passion for simplifying complex topics. I've delivered internal trainings and workshops on topics including:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div class="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg shadow-md">
+            <i class="fas fa-laptop-code text-3xl text-primary dark:text-secondary mb-4"></i>
+            <h4 class="font-semibold mb-2">Getting Started with Microsoft Dynamics 365</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Introductory workshop for new users</p>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg shadow-md">
+            <i class="fas fa-tools text-3xl text-primary dark:text-secondary mb-4"></i>
+            <h4 class="font-semibold mb-2">Basic Troubleshooting for Non-Tech Staff</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Empowering all employees with IT skills</p>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg shadow-md">
+            <i class="fas fa-robot text-3xl text-primary dark:text-secondary mb-4"></i>
+            <h4 class="font-semibold mb-2">Introduction to AI Tools for Business</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Practical applications of AI in workplace</p>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg shadow-md">
+            <i class="fas fa-graduation-cap text-3xl text-primary dark:text-secondary mb-4"></i>
+            <h4 class="font-semibold mb-2">IT Essentials for New Students</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">University onboarding program</p>
+          </div>
+        </div>
+        
+        <p class="text-lg text-gray-700 dark:text-gray-300">
+          Looking forward to launching my own online course in 2026!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 bg-gray-100 dark:bg-dark-background">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold section-heading mb-12" data-aos="fade-right">Pictures & Media Gallery</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-img-index="0">
+          <img 
+            src="./images/adroit.jpg" 
+            alt="Delivering a Dynamics 365 workshop at Adroit Solutions" 
+            class="w-full h-64 object-cover"
+          >
+          <div class="p-3 bg-white dark:bg-gray-800">
+            <p class="text-sm text-gray-700 dark:text-gray-300">Delivering a Dynamics 365 workshop at Adroit Solutions</p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100" data-img-index="1">
+          <img 
+            src="./images/isaac2.jpg" 
+            alt="Providing IT support at Aga Khan University" 
+            class="w-full h-64 object-cover"
+          >
+          <div class="p-3 bg-white dark:bg-gray-800">
+            <p class="text-sm text-gray-700 dark:text-gray-300">Providing IT support at Aga Khan University</p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200" data-img-index="2">
+          <img 
+            src="./images/mb800.png" 
+            alt="Awarded Microsoft Certification – Business Central" 
+            class="w-full h-64 object-cover"
+          >
+          <div class="p-3 bg-white dark:bg-gray-800">
+            <p class="text-sm text-gray-700 dark:text-gray-300">Awarded Microsoft Certification – Business Central</p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-img-index="3">
+          <img 
+            src="./images/tech.jpg" 
+            alt="Speaking at a tech conference" 
+            class="w-full h-64 object-cover"
+          >
+          <div class="p-3 bg-white dark:bg-gray-800">
+            <p class="text-sm text-gray-700 dark:text-gray-300">Speaking at a tech conference</p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100" data-img-index="4">
+          <img 
+            src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" 
+            alt="Working on a Dynamics 365 customization" 
+            class="w-full h-64 object-cover"
+          >
+          <div class="p-3 bg-white dark:bg-gray-800">
+            <p class="text-sm text-gray-700 dark:text-gray-300">Working on a Dynamics 365 customization</p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200" data-img-index="5">
+          <img 
+            src="./images/talkings.jpg" 
+            alt="IT training session for students" 
+            class="w-full h-64 object-cover"
+          >
+          <div class="p-3 bg-white dark:bg-gray-800">
+            <p class="text-sm text-gray-700 dark:text-gray-300">IT training session for students</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Lightbox -->
+  <div id="lightbox-overlay" class="lightbox-overlay fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center hidden">
+    <div class="lightbox-content relative max-w-4xl w-full mx-4">
+      <button id="lightbox-close" class="absolute -top-12 right-0 text-white hover:text-gray-300 text-3xl">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="relative">
+        <button id="lightbox-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white hover:bg-opacity-70 p-3 rounded-r-lg">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <img id="lightbox-image" src="" alt="" class="w-full">
+        
+        <button id="lightbox-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white hover:bg-opacity-70 p-3 rounded-l-lg">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <p id="lightbox-caption" class="text-white text-center mt-4 text-lg"></p>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white dark:bg-dark-surface">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold section-heading mb-12" data-aos="fade-right">Contact Me</h2>
+      
+      <div class="flex flex-col lg:flex-row gap-12">
+        <div class="lg:w-1/2" data-aos="fade-up">
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-md">
+            <h3 class="text-2xl font-semibold mb-6 text-primary dark:text-secondary">Get In Touch</h3>
+            
+            <form id="contact-form" class="space-y-6">
+              <div class="space-y-2">
+                <label for="name" class="block text-gray-700 dark:text-gray-300">Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary dark:bg-gray-700 dark:text-white"
+                >
+              </div>
+              
+              <div class="space-y-2">
+                <label for="email" class="block text-gray-700 dark:text-gray-300">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary dark:bg-gray-700 dark:text-white"
+                >
+              </div>
+              
+              <div class="space-y-2">
+                <label for="subject" class="block text-gray-700 dark:text-gray-300">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject" 
+                  required 
+                  class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary dark:bg-gray-700 dark:text-white"
+                >
+              </div>
+              
+              <div class="space-y-2">
+                <label for="message" class="block text-gray-700 dark:text-gray-300">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  required 
+                  class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary dark:bg-gray-700 dark:text-white"
+                ></textarea>
+              </div>
+              
+              <div>
+                <button 
+                  type="submit" 
+                  class="w-full bg-primary hover:bg-opacity-90 text-white font-medium py-3 rounded-md transition duration-300 flex items-center justify-center"
+                >
+                  <span id="submit-text">Send Message</span>
+                  <span id="submit-loading" class="hidden">
+                    <i class="fas fa-spinner fa-spin ml-2"></i>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/2" data-aos="fade-up" data-aos-delay="100">
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold mb-6 text-primary dark:text-secondary">Contact Information</h3>
+            
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="bg-primary dark:bg-dark-primary bg-opacity-20 p-3 rounded-full mr-4">
+                  <i class="fas fa-envelope text-xl text-primary dark:text-secondary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Email</h4>
+                  <a href="mailto:Isaac.ampaire@outlook.com" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-secondary transition duration-300">
+                    Isaac.ampaire@outlook.com
+                  </a>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-primary dark:bg-dark-primary bg-opacity-20 p-3 rounded-full mr-4">
+                  <i class="fas fa-phone text-xl text-primary dark:text-secondary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Phone</h4>
+                  <a href="tel:+256775767776" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-secondary transition duration-300">
+                    +256 (0) 775 767776
+                  </a>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-primary dark:bg-dark-primary bg-opacity-20 p-3 rounded-full mr-4">
+                  <i class="fas fa-map-marker-alt text-xl text-primary dark:text-secondary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Location</h4>
+                  <p class="text-gray-700 dark:text-gray-300">
+                   Kisaasi-Kampala, Uganda
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-primary dark:bg-dark-primary bg-opacity-20 p-3 rounded-full mr-4">
+                  <i class="fab fa-linkedin text-xl text-primary dark:text-secondary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/isaac-ampaire-081183283/" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-secondary transition duration-300">
+                    Connect with me
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Ready for Next Steps?</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-6">
+              "Technology works best when it's invisible — empowering people to do more, not fight with systems."
+              <span class="block mt-2 font-medium">— Isaac Ampaire</span>
+            </p>
+            <div class="border-t border-gray-200 dark:border-gray-700 pt-4">
+              <p class="font-semibold mb-2">Let's work together. I'm available for:</p>
+              <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                <li>Consulting on IT infrastructure & solutions</li>
+                <li>Microsoft Dynamics 365 implementation</li>
+                <li>Training and workshops</li>
+                <li>Full-time opportunities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="font-semibold text-lg">Isaac Ampaire</p>
+          <p class="text-gray-400">IT Officer | Microsoft Dynamics 365 Consultant</p>
+        </div>
+        
+        <div class="flex space-x-4">
+          <a href="mailto:Isaac.ampaire@outlook.com" class="hover:text-secondary transition duration-300">
+            <i class="fas fa-envelope text-xl"></i>
+          </a>
+          <a href="https://wa.me/256775767776" class="hover:text-secondary transition duration-300">
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/isaac-ampaire-081183283/" class="hover:text-secondary transition duration-300">
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Isaac Ampaire. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Success Message Toast -->
+  <div id="success-toast" class="fixed bottom-4 right-4 bg-green-600 text-white px-6 py-4 rounded-md shadow-lg z-50 transform translate-y-full opacity-0 transition-all duration-300">
+    <div class="flex items-center space-x-2">
+      <i class="fas fa-check-circle"></i>
+      <span>Message sent successfully!</span>
+    </div>
+  </div>
+
+  <!-- AOS Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <script id="app-script">
+    // Initialize AOS animation library
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      // Dark mode toggle functionality
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+      const html = document.documentElement;
+      
+      // Check local storage for theme preference
+      const darkMode = localStorage.getItem('darkMode') === 'true';
+      
+      // Apply saved theme preference
+      if (darkMode) {
+        html.classList.add('dark');
+      }
+      
+      function toggleDarkMode() {
+        html.classList.toggle('dark');
+        localStorage.setItem('darkMode', html.classList.contains('dark'));
+      }
+      
+      themeToggle.addEventListener('click', toggleDarkMode);
+      themeToggleMobile.addEventListener('click', toggleDarkMode);
+      
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileOverlay = document.getElementById('mobile-overlay');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+      
+      function toggleMobileMenu() {
+        mobileMenu.classList.toggle('active');
+        mobileOverlay.classList.toggle('hidden');
+        
+        if (mobileMenu.classList.contains('active')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      }
+      
+      mobileMenuButton.addEventListener('click', toggleMobileMenu);
+      mobileOverlay.addEventListener('click', toggleMobileMenu);
+      
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          toggleMobileMenu();
+        });
+      });
+      
+      // Lightbox gallery functionality
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const lightboxOverlay = document.getElementById('lightbox-overlay');
+      const lightboxImage = document.getElementById('lightbox-image');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      const lightboxClose = document.getElementById('lightbox-close');
+      const lightboxNext = document.getElementById('lightbox-next');
+      const lightboxPrev = document.getElementById('lightbox-prev');
+      
+      let currentImageIndex = 0;
+      const galleryImages = [];
+      
+      // Collect all gallery images
+      galleryItems.forEach(item => {
+        const imgSrc = item.querySelector('img').src;
+        const imgAlt = item.querySelector('img').alt;
+        const imgIndex = parseInt(item.dataset.imgIndex);
+        
+        galleryImages[imgIndex] = {
+          src: imgSrc,
+          caption: imgAlt
+        };
+        
+        item.addEventListener('click', () => {
+          openLightbox(imgIndex);
+        });
+      });
+      
+      function openLightbox(index) {
+        currentImageIndex = index;
+        updateLightboxContent();
+        lightboxOverlay.classList.remove('hidden');
+        setTimeout(() => {
+          lightboxOverlay.classList.add('active');
+        }, 10);
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeLightbox() {
+        lightboxOverlay.classList.remove('active');
+        setTimeout(() => {
+          lightboxOverlay.classList.add('hidden');
+        }, 300);
+        document.body.style.overflow = '';
+      }
+      
+      function updateLightboxContent() {
+        const image = galleryImages[currentImageIndex];
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.caption;
+        lightboxCaption.textContent = image.caption;
+      }
+      
+      function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+        updateLightboxContent();
+      }
+      
+      function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+        updateLightboxContent();
+      }
+      
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxNext.addEventListener('click', nextImage);
+      lightboxPrev.addEventListener('click', prevImage);
+      
+      // Keyboard navigation for lightbox
+      document.addEventListener('keydown', function(e) {
+        if (!lightboxOverlay.classList.contains('active')) return;
+        
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+      });
+      
+      // Click outside to close lightbox
+      lightboxOverlay.addEventListener('click', function(e) {
+        if (e.target === lightboxOverlay) {
+          closeLightbox();
+        }
+      });
+      
+      // Contact form submission
+      const contactForm = document.getElementById('contact-form');
+      const submitText = document.getElementById('submit-text');
+      const submitLoading = document.getElementById('submit-loading');
+      const successToast = document.getElementById('success-toast');
+      
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic form validation
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        if (!name || !email || !subject || !message) {
+          alert('Please fill in all fields');
+          return;
+        }
+        
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert('Please enter a valid email address');
+          return;
+        }
+        
+        // Show loading state
+        submitText.innerText = 'Sending...';
+        submitLoading.classList.remove('hidden');
+        
+        // Simulate API call with timeout
+        setTimeout(() => {
+          // Hide loading state
+          submitText.innerText = 'Send Message';
+          submitLoading.classList.add('hidden');
+          
+          // Reset form
+          contactForm.reset();
+          
+          // Show success message
+          successToast.classList.remove('translate-y-full', 'opacity-0');
+          
+          // Hide success message after 3 seconds
+          setTimeout(() => {
+            successToast.classList.add('translate-y-full', 'opacity-0');
+          }, 3000);
+        }, 1500);
+      });
+      
+      // Smooth scrolling for navigation links
+      const navLinks = document.querySelectorAll('a[href^="#"]');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          
+          if (href === '#') return;
+          
+          e.preventDefault();
+          
+          const targetElement = document.querySelector(href);
+          
+          if (targetElement) {
+            const headerOffset = 80;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Add active class to nav links on scroll
+      const sections = document.querySelectorAll('section');
+      const navLinkElements = document.querySelectorAll('.nav-link');
+      
+      window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 200;
+          const sectionHeight = section.clientHeight;
+          
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navLinkElements.forEach(navLink => {
+          navLink.classList.remove('active');
+          if (navLink.getAttribute('href') === `#${current}`) {
+            navLink.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
